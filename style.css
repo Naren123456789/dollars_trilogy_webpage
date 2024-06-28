@@ -34,7 +34,7 @@ header{
 .wrapper h1{
     position: absolute;
     top: 0vh;
-    right: 35% auto;
+    right: 35% ;
 }
 .wrapper p{
     position: absolute;
