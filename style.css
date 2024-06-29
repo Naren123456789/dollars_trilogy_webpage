@@ -283,13 +283,23 @@ tr:last-child {
 @media only screen and (max-width: 1439px) and (orientation: landscape) {
     header {
         height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
+    .wrapper p{
+        color: #f80a0a;
+        padding-top: 10vh;
+        padding-right: 35;
+        z-index: 1000;
+    }
 
     header .ll {
         height: 40vh;
         width: 100vh;
         position: absolute;
+        top: 0;
         right: 53vh;
         z-index: -999;
         top: 10vh;
