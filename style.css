@@ -190,7 +190,7 @@ tr:last-child {
 }
 
 /* Media Queries for Mobile View */
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1439px) and (orientation: portrait) {
     header {
         height: 20vh;
     }
@@ -274,6 +274,102 @@ tr:last-child {
     .other3 img {
         height: 20vh;
         width: 15vh;
+        position: absolute;
+        left: 0%;
+        z-index: 1000;
+    }
+}
+
+@media only screen and (max-width: 1439px) and (orientation: landscape) {
+    header {
+        height: 50vh;
+    }
+
+
+    header .ll {
+        height: 40vh;
+        width: 100vh;
+        position: absolute;
+        right: 53vh;
+        z-index: -999;
+        top: 10vh;
+    }
+
+    .wrapper {
+        padding-top: 5vh;
+        padding-bottom: 1vh;
+        font-size: large;
+        text-align: center;
+    }
+    .wrapper h1 {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .wrapper p {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .container {
+        margin-top: vh;
+        height: auto;
+    }
+
+    .right {
+        width: 100%;
+        position: static;
+        height: auto;
+        padding-left: 0;
+    }
+    .right img {
+        height: auto;
+    }
+
+    .left {
+        width: 100%;
+        margin: 10px 0;
+        padding-left: 0;
+    }
+
+    .left .movies .view button {
+        right: 10%;
+    }
+
+    .movie_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .right video {
+        width: 100%;
+        height: auto;
+    }
+
+    .bottom {
+        height: 20vh;
+    }
+    .bottomback {
+        height: 20vh;
+    }
+    .other1 img {
+        height: 20vh;
+        width: 30vh;
+        position: absolute;
+        right: 0%;
+        z-index: 1000;
+    }
+    .other2 img {
+        height: 20vh;
+        width: 30vh;
+        position: absolute;
+        right: 45%;
+        z-index: 1000;
+    }
+    .other3 img {
+        height: 20vh;
+        width: 30vh;
         position: absolute;
         left: 0%;
         z-index: 1000;
